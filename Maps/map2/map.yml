@@ -1,0 +1,769 @@
+agents:
+  - id: 1
+    nodeId: 1
+    token: "token_1"
+    team: FIRST
+    type: THIEF
+    balance: 100.0
+  - id: 2
+    nodeId: 1
+    token: "token_2"
+    team: FIRST
+    type: THIEF
+    balance: 100.0
+  - id: 3
+    nodeId: 1
+    token: "token_3"
+    team: FIRST
+    type: POLICE
+    balance: 100.0
+  - id: 4
+    nodeId: 1
+    token: "token_4"
+    team: FIRST
+    type: POLICE
+    balance: 100.0
+  - id: 5
+    nodeId: 1
+    token: "token_5"
+    team: FIRST
+    type: POLICE
+    balance: 100.0
+  - id: 6
+    nodeId: 1
+    token: "token_6"
+    team: FIRST
+    type: POLICE
+    balance: 100.0
+  - id: 7
+    nodeId: 1
+    token: "token_7"
+    team: SECOND
+    type: THIEF
+    balance: 100.0
+  - id: 8
+    nodeId: 1
+    token: "token_8"
+    team: SECOND
+    type: THIEF
+    balance: 100.0
+  - id: 9
+    nodeId: 1
+    token: "token_9"
+    team: SECOND
+    type: POLICE
+    balance: 100.0
+  - id: 10
+    nodeId: 1
+    token: "token_10"
+    team: SECOND
+    type: POLICE
+    balance: 100.0
+  - id: 11
+    nodeId: 1
+    token: "token_11"
+    team: SECOND
+    type: POLICE
+    balance: 100.0
+  - id: 12
+    nodeId: 1
+    token: "token_12"
+    team: SECOND
+    type: POLICE
+    balance: 100.0
+    
+income:
+  policeIncomeEachTurn: 10
+  thiefIncomeEachTurn: 10
+
+graph:
+  paths:
+    - id: 1
+      firstNodeId: 2
+      secondNodeId: 3
+      price: 0
+    - id: 2
+      firstNodeId: 1
+      secondNodeId: 3
+      price: 0
+    - id: 3
+      firstNodeId: 1
+      secondNodeId: 2
+      price: 0
+    - id: 4
+      firstNodeId: 2
+      secondNodeId: 5
+      price: 0
+    - id: 5
+      firstNodeId: 1
+      secondNodeId: 5
+      price: 0
+    - id: 6
+      firstNodeId: 1
+      secondNodeId: 4
+      price: 0
+    - id: 7
+      firstNodeId: 3
+      secondNodeId: 4
+      price: 0
+    - id: 8
+      firstNodeId: 4
+      secondNodeId: 5
+      price: 0
+    - id: 9
+      firstNodeId: 7
+      secondNodeId: 8
+      price: 0
+    - id: 10
+      firstNodeId: 8
+      secondNodeId: 9
+      price: 0
+    - id: 11
+      firstNodeId: 9
+      secondNodeId: 10
+      price: 0
+    - id: 12
+      firstNodeId: 10
+      secondNodeId: 11
+      price: 0
+    - id: 13
+      firstNodeId: 11
+      secondNodeId: 12
+      price: 0
+    - id: 14
+      firstNodeId: 12
+      secondNodeId: 13
+      price: 0
+    - id: 15
+      firstNodeId: 6
+      secondNodeId: 13
+      price: 0
+    - id: 16
+      firstNodeId: 6
+      secondNodeId: 7
+      price: 0
+    - id: 17
+      firstNodeId: 5
+      secondNodeId: 6
+      price: 0
+    - id: 18
+      firstNodeId: 3
+      secondNodeId: 10
+      price: 0
+    - id: 19
+      firstNodeId: 14
+      secondNodeId: 15
+      price: 0
+    - id: 20
+      firstNodeId: 15
+      secondNodeId: 16
+      price: 0
+    - id: 21
+      firstNodeId: 16
+      secondNodeId: 17
+      price: 0
+    - id: 22
+      firstNodeId: 17
+      secondNodeId: 18
+      price: 0
+    - id: 23
+      firstNodeId: 18
+      secondNodeId: 19
+      price: 0
+    - id: 24
+      firstNodeId: 19
+      secondNodeId: 20
+      price: 0
+    - id: 25
+      firstNodeId: 20
+      secondNodeId: 21
+      price: 0
+    - id: 26
+      firstNodeId: 21
+      secondNodeId: 22
+      price: 0
+    - id: 27
+      firstNodeId: 22
+      secondNodeId: 23
+      price: 0
+    - id: 28
+      firstNodeId: 23
+      secondNodeId: 24
+      price: 0
+    - id: 29
+      firstNodeId: 24
+      secondNodeId: 25
+      price: 0
+    - id: 30
+      firstNodeId: 25
+      secondNodeId: 26
+      price: 0
+    - id: 31
+      firstNodeId: 26
+      secondNodeId: 27
+      price: 0
+    - id: 32
+      firstNodeId: 27
+      secondNodeId: 28
+      price: 0
+    - id: 33
+      firstNodeId: 28
+      secondNodeId: 29
+      price: 0
+    - id: 34
+      firstNodeId: 14
+      secondNodeId: 29
+      price: 0
+    - id: 35
+      firstNodeId: 7
+      secondNodeId: 28
+      price: 25
+    - id: 36
+      firstNodeId: 9
+      secondNodeId: 16
+      price: 25
+    - id: 37
+      firstNodeId: 11
+      secondNodeId: 20
+      price: 25
+    - id: 38
+      firstNodeId: 13
+      secondNodeId: 24
+      price: 25
+    - id: 39
+      firstNodeId: 8
+      secondNodeId: 14
+      price: 0
+    - id: 40
+      firstNodeId: 12
+      secondNodeId: 22
+      price: 0
+    - id: 41
+      firstNodeId: 30
+      secondNodeId: 31
+      price: 0
+    - id: 42
+      firstNodeId: 31
+      secondNodeId: 32
+      price: 0
+    - id: 43
+      firstNodeId: 32
+      secondNodeId: 33
+      price: 0
+    - id: 44
+      firstNodeId: 33
+      secondNodeId: 34
+      price: 0
+    - id: 45
+      firstNodeId: 34
+      secondNodeId: 35
+      price: 0
+    - id: 46
+      firstNodeId: 35
+      secondNodeId: 36
+      price: 0
+    - id: 47
+      firstNodeId: 36
+      secondNodeId: 37
+      price: 0
+    - id: 48
+      firstNodeId: 37
+      secondNodeId: 38
+      price: 0
+    - id: 49
+      firstNodeId: 38
+      secondNodeId: 39
+      price: 0
+    - id: 50
+      firstNodeId: 39
+      secondNodeId: 40
+      price: 0
+    - id: 51
+      firstNodeId: 40
+      secondNodeId: 41
+      price: 0
+    - id: 52
+      firstNodeId: 41
+      secondNodeId: 42
+      price: 0
+    - id: 53
+      firstNodeId: 42
+      secondNodeId: 43
+      price: 0
+    - id: 54
+      firstNodeId: 43
+      secondNodeId: 44
+      price: 0
+    - id: 55
+      firstNodeId: 44
+      secondNodeId: 45
+      price: 0
+    - id: 56
+      firstNodeId: 45
+      secondNodeId: 46
+      price: 0
+    - id: 57
+      firstNodeId: 46
+      secondNodeId: 47
+      price: 0
+    - id: 58
+      firstNodeId: 47
+      secondNodeId: 48
+      price: 0
+    - id: 59
+      firstNodeId: 48
+      secondNodeId: 49
+      price: 0
+    - id: 60
+      firstNodeId: 49
+      secondNodeId: 50
+      price: 0
+    - id: 61
+      firstNodeId: 50
+      secondNodeId: 51
+      price: 0
+    - id: 62
+      firstNodeId: 51
+      secondNodeId: 52
+      price: 0
+    - id: 63
+      firstNodeId: 52
+      secondNodeId: 53
+      price: 0
+    - id: 64
+      firstNodeId: 53
+      secondNodeId: 54
+      price: 0
+    - id: 65
+      firstNodeId: 54
+      secondNodeId: 55
+      price: 0
+    - id: 66
+      firstNodeId: 55
+      secondNodeId: 56
+      price: 0
+    - id: 67
+      firstNodeId: 56
+      secondNodeId: 57
+      price: 0
+    - id: 68
+      firstNodeId: 57
+      secondNodeId: 58
+      price: 0
+    - id: 69
+      firstNodeId: 58
+      secondNodeId: 59
+      price: 0
+    - id: 70
+      firstNodeId: 59
+      secondNodeId: 60
+      price: 0
+    - id: 71
+      firstNodeId: 60
+      secondNodeId: 61
+      price: 0
+    - id: 72
+      firstNodeId: 30
+      secondNodeId: 61
+      price: 0
+    - id: 73
+      firstNodeId: 26
+      secondNodeId: 54
+      price: 0
+    - id: 74
+      firstNodeId: 18
+      secondNodeId: 38
+      price: 0
+    - id: 75
+      firstNodeId: 28
+      secondNodeId: 58
+      price: 25
+    - id: 76
+      firstNodeId: 27
+      secondNodeId: 56
+      price: 25
+    - id: 77
+      firstNodeId: 25
+      secondNodeId: 52
+      price: 25
+    - id: 78
+      firstNodeId: 24
+      secondNodeId: 50
+      price: 25
+    - id: 79
+      firstNodeId: 23
+      secondNodeId: 48
+      price: 25
+    - id: 80
+      firstNodeId: 21
+      secondNodeId: 44
+      price: 25
+    - id: 81
+      firstNodeId: 19
+      secondNodeId: 40
+      price: 25
+    - id: 82
+      firstNodeId: 17
+      secondNodeId: 36
+      price: 25
+    - id: 83
+      firstNodeId: 16
+      secondNodeId: 34
+      price: 25
+    - id: 84
+      firstNodeId: 15
+      secondNodeId: 32
+      price: 25
+    - id: 85
+      firstNodeId: 6
+      secondNodeId: 54
+      price: 50
+    - id: 86
+      firstNodeId: 10
+      secondNodeId: 38
+      price: 50
+    - id: 87
+      firstNodeId: 62
+      secondNodeId: 63
+      price: 0
+    - id: 88
+      firstNodeId: 63
+      secondNodeId: 64
+      price: 0
+    - id: 89
+      firstNodeId: 64
+      secondNodeId: 65
+      price: 0
+    - id: 90
+      firstNodeId: 65
+      secondNodeId: 66
+      price: 0
+    - id: 91
+      firstNodeId: 66
+      secondNodeId: 67
+      price: 0
+    - id: 92
+      firstNodeId: 67
+      secondNodeId: 68
+      price: 0
+    - id: 93
+      firstNodeId: 68
+      secondNodeId: 69
+      price: 0
+    - id: 94
+      firstNodeId: 69
+      secondNodeId: 70
+      price: 0
+    - id: 95
+      firstNodeId: 70
+      secondNodeId: 71
+      price: 0
+    - id: 96
+      firstNodeId: 71
+      secondNodeId: 72
+      price: 0
+    - id: 97
+      firstNodeId: 72
+      secondNodeId: 73
+      price: 0
+    - id: 98
+      firstNodeId: 73
+      secondNodeId: 74
+      price: 0
+    - id: 99
+      firstNodeId: 74
+      secondNodeId: 75
+      price: 0
+    - id: 100
+      firstNodeId: 75
+      secondNodeId: 76
+      price: 0
+    - id: 101
+      firstNodeId: 76
+      secondNodeId: 77
+      price: 0
+    - id: 102
+      firstNodeId: 77
+      secondNodeId: 78
+      price: 0
+    - id: 103
+      firstNodeId: 78
+      secondNodeId: 79
+      price: 0
+    - id: 104
+      firstNodeId: 79
+      secondNodeId: 80
+      price: 0
+    - id: 105
+      firstNodeId: 80
+      secondNodeId: 81
+      price: 0
+    - id: 106
+      firstNodeId: 81
+      secondNodeId: 82
+      price: 0
+    - id: 107
+      firstNodeId: 82
+      secondNodeId: 83
+      price: 0
+    - id: 108
+      firstNodeId: 83
+      secondNodeId: 84
+      price: 0
+    - id: 109
+      firstNodeId: 84
+      secondNodeId: 85
+      price: 0
+    - id: 110
+      firstNodeId: 85
+      secondNodeId: 86
+      price: 0
+    - id: 111
+      firstNodeId: 86
+      secondNodeId: 87
+      price: 0
+    - id: 112
+      firstNodeId: 87
+      secondNodeId: 88
+      price: 0
+    - id: 113
+      firstNodeId: 88
+      secondNodeId: 89
+      price: 0
+    - id: 114
+      firstNodeId: 89
+      secondNodeId: 90
+      price: 0
+    - id: 115
+      firstNodeId: 90
+      secondNodeId: 91
+      price: 0
+    - id: 116
+      firstNodeId: 91
+      secondNodeId: 92
+      price: 0
+    - id: 117
+      firstNodeId: 92
+      secondNodeId: 93
+      price: 0
+    - id: 118
+      firstNodeId: 62
+      secondNodeId: 93
+      price: 0
+    - id: 119
+      firstNodeId: 30
+      secondNodeId: 62
+      price: 0
+    - id: 120
+      firstNodeId: 46
+      secondNodeId: 78
+      price: 0
+    - id: 121
+      firstNodeId: 58
+      secondNodeId: 90
+      price: 25
+    - id: 122
+      firstNodeId: 34
+      secondNodeId: 66
+      price: 25
+    - id: 123
+      firstNodeId: 20
+      secondNodeId: 42
+      price: 25
+    - id: 124
+      firstNodeId: 42
+      secondNodeId: 74
+      price: 25
+    - id: 125
+      firstNodeId: 50
+      secondNodeId: 82
+      price: 25
+    - id: 126
+      firstNodeId: 54
+      secondNodeId: 82
+      price: 50
+    - id: 127
+      firstNodeId: 54
+      secondNodeId: 90
+      price: 50
+    - id: 128
+      firstNodeId: 14
+      secondNodeId: 62
+      price: 50
+    - id: 129
+      firstNodeId: 22
+      secondNodeId: 78
+      price: 50
+    - id: 130
+      firstNodeId: 78
+      secondNodeId: 82
+      price: 50
+    - id: 131
+      firstNodeId: 62
+      secondNodeId: 90
+      price: 50
+    - id: 132
+      firstNodeId: 62
+      secondNodeId: 66
+      price: 50
+    - id: 133
+      firstNodeId: 38
+      secondNodeId: 66
+      price: 50
+    - id: 134
+      firstNodeId: 38
+      secondNodeId: 74
+      price: 50
+    - id: 135
+      firstNodeId: 74
+      secondNodeId: 78
+      price: 50
+  nodes:
+    - id: 1
+    - id: 2
+    - id: 3
+    - id: 4
+    - id: 5
+    - id: 6
+    - id: 7
+    - id: 8
+    - id: 9
+    - id: 10
+    - id: 11
+    - id: 12
+    - id: 13
+    - id: 14
+    - id: 15
+    - id: 16
+    - id: 17
+    - id: 18
+    - id: 19
+    - id: 20
+    - id: 21
+    - id: 22
+    - id: 23
+    - id: 24
+    - id: 25
+    - id: 26
+    - id: 27
+    - id: 28
+    - id: 29
+    - id: 30
+    - id: 31
+    - id: 32
+    - id: 33
+    - id: 34
+    - id: 35
+    - id: 36
+    - id: 37
+    - id: 38
+    - id: 39
+    - id: 40
+    - id: 41
+    - id: 42
+    - id: 43
+    - id: 44
+    - id: 45
+    - id: 46
+    - id: 47
+    - id: 48
+    - id: 49
+    - id: 50
+    - id: 51
+    - id: 52
+    - id: 53
+    - id: 54
+    - id: 55
+    - id: 56
+    - id: 57
+    - id: 58
+    - id: 59
+    - id: 60
+    - id: 61
+    - id: 62
+    - id: 63
+    - id: 64
+    - id: 65
+    - id: 66
+    - id: 67
+    - id: 68
+    - id: 69
+    - id: 70
+    - id: 71
+    - id: 72
+    - id: 73
+    - id: 74
+    - id: 75
+    - id: 76
+    - id: 77
+    - id: 78
+    - id: 79
+    - id: 80
+    - id: 81
+    - id: 82
+    - id: 83
+    - id: 84
+    - id: 85
+    - id: 86
+    - id: 87
+    - id: 88
+    - id: 89
+    - id: 90
+    - id: 91
+    - id: 92
+    - id: 93
+
+
+turnSettings:
+  maxTurns: 200
+  visibleTurns:
+    - 10
+    - 20
+    - 30
+    - 40
+    - 48
+    - 56
+    - 64
+    - 72
+    - 80
+    - 86
+    - 92
+    - 98
+    - 104
+    - 110
+    - 116
+    - 120
+    - 124
+    - 128
+    - 132
+    - 136
+    - 140
+    - 144
+    - 148
+    - 152
+    - 156
+    - 160
+    - 162
+    - 164
+    - 166
+    - 168
+    - 170
+    - 172
+    - 174
+    - 176
+    - 178
+    - 180
+    - 182
+    - 184
+    - 186
+    - 188
+    - 190
+    - 192
+    - 194
+    - 196
+    - 198
+    - 200
+
+chatSettings:
+  chatBoxMaxSize: 100
+  chatCostPerCharacter: 1
