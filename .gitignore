@@ -1,0 +1,4 @@
+.DS_Store
+
+# ignore directories in "visualizer" (extracted) 
+visualizer/**/
