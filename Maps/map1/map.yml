@@ -3,7 +3,7 @@ agents:
     nodeId: 1
     token: "token_1"
     team: FIRST
-    type: THIEF
+    type: JOKER
     balance: 100.0
   - id: 2
     nodeId: 1
@@ -21,7 +21,7 @@ agents:
     nodeId: 1
     token: "token_4"
     team: FIRST
-    type: POLICE
+    type: BATMAN
     balance: 100.0
   - id: 5
     nodeId: 1
@@ -51,7 +51,7 @@ agents:
     nodeId: 1
     token: "token_9"
     team: SECOND
-    type: THIEF
+    type: JOKER
     balance: 100.0
   - id: 10
     nodeId: 1
@@ -69,7 +69,7 @@ agents:
     nodeId: 1
     token: "token_12"
     team: SECOND
-    type: POLICE
+    type: BATMAN
     balance: 100.0
   - id: 13
     nodeId: 1
@@ -101,6 +101,9 @@ income:
   thiefIncomeEachTurn: 10
 
 graph:
+  visibleRadiusXPoliceThief: 7
+  visibleRadiusYPoliceJoker: 3
+  visibleRadiusZThiefBatman: 3
   paths:
     - id: 1
       firstNodeId: 1
@@ -1456,7 +1459,7 @@ graph:
     - id: 159
 
 turnSettings:
-  maxTurns: 200
+  maxTurns: 100
   visibleTurns:
     - 10
     - 20
@@ -1467,43 +1470,16 @@ turnSettings:
     - 64
     - 72
     - 80
+    - 82
+    - 84
     - 86
+    - 88
+    - 90
     - 92
+    - 94
+    - 96
     - 98
-    - 104
-    - 110
-    - 116
-    - 120
-    - 124
-    - 128
-    - 132
-    - 136
-    - 140
-    - 144
-    - 148
-    - 152
-    - 156
-    - 160
-    - 162
-    - 164
-    - 166
-    - 168
-    - 170
-    - 172
-    - 174
-    - 176
-    - 178
-    - 180
-    - 182
-    - 184
-    - 186
-    - 188
-    - 190
-    - 192
-    - 194
-    - 196
-    - 198
-    - 200
+    - 100
 
 chatSettings:
   chatBoxMaxSize: 100
